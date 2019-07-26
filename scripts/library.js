@@ -11,7 +11,7 @@ function getUsersAysnc(callback)
     axios.get(API_ENDPOINT).then(function(response){
         // if callback is not null
         if (callback) {
-            callback(response.data);
+            callback(response.data.results);
         }
     })
 }
